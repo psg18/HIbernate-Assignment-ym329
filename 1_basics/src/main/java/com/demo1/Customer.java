@@ -39,8 +39,8 @@ public class Customer {
 	public Customer() {}
 	@Override
 	public String toString() {
-		return "Customer [customerId=" + customerId + ", customerName=" + customerName + ", customerAddess="
-				+ customerAddess + "]";
+		return "CustomerId=" + customerId + ", CustomerName=" + customerName + ", CustomerAddess="
+				+ customerAddess;
 	}
 	
 	
