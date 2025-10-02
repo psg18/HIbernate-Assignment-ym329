@@ -13,8 +13,8 @@ public class HibernateSessionFactory {
 	public static SessionFactory getSessionFactory() {
 		StandardServiceRegistry serviceRegistry=new StandardServiceRegistryBuilder()
 				.configure("hibernate.cfg.xml").build();
-		if(factory==null) {
-		 factory=new MetadataSources(serviceRegistry)
+		if (factory==null || factory=="") {
+		 	factory=new MetadataSources(serviceRegistry)
 				.buildMetadata().buildSessionFactory();
 		}
 		return factory;
