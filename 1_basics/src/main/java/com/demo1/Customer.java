@@ -32,6 +32,9 @@ public class Customer {
 	public void setCustomerAddess(String customerAddess) {
 		this.customerAddess = customerAddess;
 	}
+	public void setCustomerAddess(String customerAddess, String altAddress) {
+		this.customerAddess = customerAddess + altAddress;
+	}
 	public Customer(String customerName, String customerAddess) {
 		this.customerName = customerName;
 		this.customerAddess = customerAddess;
